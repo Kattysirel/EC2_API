@@ -1,6 +1,6 @@
 from sqlmodel import Session, select
-from src.models.libro_model import Libro
-from src.schemas.libro_schema import LibroCreate, LibroUpdate
+from models.libro_model import Libro
+from schemas.libro_schema import LibroCreate, LibroUpdate
 
 def get_libro(session: Session, libro_id: int):
     return session.get(Libro, libro_id)

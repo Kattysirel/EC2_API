@@ -1,6 +1,6 @@
 from sqlmodel import Session, select
-from src.models.prestamo_model import Prestamo
-from src.schemas.prestamo_schema import PrestamoCreate, PrestamoUpdate
+from models.prestamo_model import Prestamo
+from schemas.prestamo_schema import PrestamoCreate, PrestamoUpdate
 
 def get_prestamo(session: Session, prestamo_id: int):
     return session.get(Prestamo, prestamo_id)

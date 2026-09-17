@@ -1,8 +1,8 @@
-from fastapi import APIRouter, Depends, HTTPException
+ffrom fastapi import APIRouter, Depends, HTTPException
 from sqlmodel import Session
-from src.database.database import get_session
-from src.crud import libro_crud
-from src.schemas.libro_schema import LibroCreate, LibroRead, LibroUpdate
+from database.database import get_session
+from crud import libro_crud
+from schemas.libro_schema import LibroCreate, LibroRead, LibroUpdate
 
 router = APIRouter(prefix="/libros", tags=["Libros"])
 

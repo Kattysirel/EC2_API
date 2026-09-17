@@ -1,7 +1,7 @@
 from contextlib import asynccontextmanager
 from fastapi import FastAPI
-from src.database.database import create_database
-from src.routers import libro_router, prestamo_router
+from database.database import create_database
+from routers import libro_router, prestamo_router
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):

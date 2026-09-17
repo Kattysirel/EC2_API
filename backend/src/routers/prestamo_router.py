@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Depends, HTTPException
 from sqlmodel import Session
-from src.database.database import get_session
-from src.crud import prestamo_crud, libro_crud
-from src.schemas.prestamo_schema import PrestamoCreate, PrestamoRead, PrestamoUpdate
+from database.database import get_session
+from crud import prestamo_crud, libro_crud
+from schemas.prestamo_schema import PrestamoCreate, PrestamoRead, PrestamoUpdate
 
 router = APIRouter(prefix="/prestamos", tags=["Prestamos"])
 
